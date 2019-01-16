@@ -7,6 +7,7 @@
 body {
 	margin: 0 auto;
 	font-family: Mija;
+		background-color: #e0e0e0;
 }
 
 .red {
@@ -161,7 +162,7 @@ nav {
 
 /*----------------------------Under Header End------------------------------*/
 
-/*---------------------------Articles Start------------------------------*/
+/*---------------------------Big Articles Start------------------------------*/
 
 .allArticles {
 	display: grid;
@@ -171,8 +172,6 @@ nav {
 .container0 {
 	width: 80%;
 	  margin: 30px auto;
-	 
-	  width: 
 }
 
 .articleBig {
@@ -252,9 +251,142 @@ nav {
 	bottom: 0;
 }
 
+/*---------------------------Big Articles End------------------------------*/
 
-/*.bigRed {
-	grid-column-start: span 2;
-	background-color: red;
-	height: 400px
-}*/
+/*---------------------------Small Articles Start------------------------------*/
+
+.smallArticles {
+	height: 2000px;
+	background-color: #e0e0e0;
+}
+
+.container1 {
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+}
+
+.article {
+	background-color: #e0e0e0;
+	height: 650px;
+	transition: all 0.4s;
+}
+
+.article:hover {
+	background-color: white; 
+	transform: scale(1.05);
+	color: #d33a2c;
+}
+
+
+.bigRed {
+	border-radius: 10px;
+	height: 650px;
+	grid-column: span 2;
+	color: white;
+}
+
+.zoneBig {
+	width: 70%;
+	margin: 40px auto;
+	text-align: center;
+}
+
+.zoneBig h1 {
+	font-size: 3em;
+	text-decoration: underline;
+	cursor: pointer;
+}
+
+.zoneBig button {
+	cursor: pointer;
+	font-size: 1.5em;
+	padding: 10px 20px;
+	color: #375a6f;
+	border-radius: 12px
+}
+
+.zoneBig a {
+	color: white;
+
+}
+
+.community {
+	font-size: 1.3em;
+	line-height: 1.7em;
+}
+
+.zoneBig img {
+	height: 230px;
+	width: 230px;
+}
+
+.zone {
+	margin: 30px auto;
+	width: 80%;
+}
+
+.when {
+	color: grey;
+	font-size: 0.9em;
+}
+
+.zone h2 {
+	font-size: 2em;
+	margin-top: 10px;
+	text-decoration: underline;
+	  text-decoration-color: #77b0bd;
+
+}
+
+.zone i {
+	color: #77b0bd;
+	font-size: 1.5em;
+}
+
+.by {
+	font-size: 1.1em;
+	color: #585656;
+	font-weight: bold;
+}
+
+.by span {
+	text-decoration: underline;
+}
+
+.articlePart {
+	font-size: 1.2em;
+	line-height: 1.5em;
+	color: #272626;
+}
+
+.moreArticles {
+	text-align: center;
+	width: 20%;
+	margin: 0 auto;
+	border-bottom: 5px solid #d33a2c;
+	padding-bottom: 5px;
+	font-weight: normal;
+	color: #2f2f2f;
+	cursor: pointer;
+}
+
+.moreArticles:hover {
+	color: #d33a2c;
+}
+
+/*---------------------------Small Articles End------------------------------*/
+
+/*---------------------------Conference Start------------------------------*/
+
+.conference {
+	background-color: #2da2c5;
+	height: 1000px;
+	background-image: url(images/conference.svg)
+}
+
+
+
+
+
+
+/*---------------------------Conference End------------------------------*/
