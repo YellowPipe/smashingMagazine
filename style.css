@@ -1,0 +1,260 @@
+
+@font-face {
+  font-family: 'Mija';
+  src: url('Mija W03 Regular.ttf');
+}
+
+body {
+	margin: 0 auto;
+	font-family: Mija;
+}
+
+.red {
+	background-color: #d33a2c;
+}
+
+.
+
+/*---------------------------Navigation Bar Start------------------------------*/
+
+nav {
+	width: 100%;
+}
+
+.mainNav {
+	display: flex;
+	list-style: none;
+	justify-content: space-between;
+	align-items: center;
+	margin: 0;
+	padding: 20px;
+	font-size: 2em;
+	color: white;
+
+}
+
+.mainNav li:hover {
+	color: black; 
+}
+
+.mainNav li:hover > img {
+	transform: rotate(0)
+}
+
+.rotate {
+	transform: rotate(-10deg);
+	transform-origin: bottom left;
+	transition: all 0.4s;
+}
+
+.mainNav li {
+	margin: 0 10px;
+	text-align: center;
+	cursor: pointer;
+	transition:all 0.4s
+}
+
+.mainNav p {
+	margin: 5px 0;
+}
+
+.smallerP {
+	font-size: 0.45em;
+	font-style: italic;
+	font-weight: lighter;
+}
+
+.logo {
+	width: 80%;
+	margin-top: 25px;
+}
+
+.navImg {
+	width: 30px;
+	display: block;
+	margin: 0 auto;
+}
+
+.topicsButton {
+	padding: 10px 30px;
+	font-size: 0.6em;
+	color: white;
+	background-color: transparent;
+	border: 4px solid;
+	border-radius: 8px;
+	font-weight: bold;
+	margin-right: 20px;
+	cursor: pointer;
+}
+
+@media only screen and (max-width: 900px) {
+    .mainNav{
+    	font-size:1em;
+    	flex-wrap: wrap;
+    }
+}
+
+/*---------------------------Navigation Bar End------------------------------*/
+
+
+/*---------------------------Under Header Start------------------------------*/
+.underHeader {
+	margin: 0 auto -120px auto;
+/*	z-index: 999;*/
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-size: 1.4em;
+}
+
+
+.changeColorSection {
+	z-index: 1;
+	position: absolute;
+	right: 20px;
+	font-size: 1.3em;
+}
+.changeColorBtn {
+	border: 2px solid white;
+	border-radius: 15px;
+}
+
+.circle {
+	color: white;
+	font-size: 1.5em;
+	vertical-align: middle;
+	transition: all 0.6s;
+	transition-timing-function: ease-in;
+}
+
+.mainNav li:hover > img {
+	transform: rotate(0)
+}
+
+.underHeader div:hover > .circle {
+	transform: rotate(540deg);
+}
+
+.underHeader h2 {
+	text-align: center;
+	width: 400px;
+	margin: 20px 0;
+	z-index: 1;
+}
+
+.underHeader h2 span{
+	background-color: white;
+	padding: 5px;
+	color: #333;
+}
+
+@media only screen and (max-width: 900px) {
+    .changeColorSection{
+    	z-index: -1;
+    }
+    .underHeader {
+    	margin: 0;
+    	background-color: #d33a2c;
+    }
+
+}
+
+/*----------------------------Under Header End------------------------------*/
+
+/*---------------------------Articles Start------------------------------*/
+
+.allArticles {
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(450px, 1fr));
+}
+
+.container0 {
+	width: 80%;
+	  margin: 30px auto;
+	 
+	  width: 
+}
+
+.articleBig {
+	height: 600px;
+	display: flex;
+	color: white;
+
+}
+
+.author {
+	display: flex;
+	margin-top: 100px;
+}
+
+.author h2{
+	margin-top: 0;
+}
+	
+.author img {
+	width: 60px;
+	height: 60px;
+	margin-right: 10px;
+	border: 4px solid white;
+	border-radius: 5px;
+	transition: all 0.4s;
+}
+
+.author img:hover {
+	transform: rotate(0);
+}
+
+.author i {
+	font-weight: lighter;
+	font-size: 0.8em;
+}
+
+.title span {
+	font-size: 0.45em;
+	vertical-align:  middle;
+}
+
+.title h1 {
+	font-size: 2.5em;
+	line-height: 1.2em;
+}
+
+
+.red0 {
+	background-color: #c7372a;
+}
+.red1 {
+	background-color: #bc3428;
+}
+.red2 {
+	background-color: #b13125;
+}
+
+.tags {
+	list-style: none;
+	display: flex;
+	padding: 10px 0;
+	font-size: 1em; 
+	font-weight: bold;
+}
+
+.tags span {
+	color: black;
+}
+
+.tags li {
+	margin-right: 50px; 
+}
+
+.arrow {
+	position: absolute;
+	left: 0;
+	bottom: 0;
+}
+
+
+/*.bigRed {
+	grid-column-start: span 2;
+	background-color: red;
+	height: 400px
+}*/
