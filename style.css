@@ -7,7 +7,7 @@
 body {
 	margin: 0 auto;
 	font-family: Mija;
-		background-color: #e0e0e0;
+		background-color: #f9f9f9;
 }
 
 .red {
@@ -101,7 +101,6 @@ nav {
 /*---------------------------Under Header Start------------------------------*/
 .underHeader {
 	margin: 0 auto -120px auto;
-/*	z-index: 999;*/
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -171,18 +170,26 @@ nav {
 
 .container0 {
 	width: 80%;
-	  margin: 30px auto;
+	margin: 30px auto;
 }
+
+
+
 
 .articleBig {
 	height: 600px;
 	display: flex;
-	color: white;
+}
 
+.white {
+	color: white;
 }
 
 .author {
 	display: flex;
+}
+
+.bigMarginTop {
 	margin-top: 100px;
 }
 
@@ -194,9 +201,12 @@ nav {
 	width: 60px;
 	height: 60px;
 	margin-right: 10px;
-	border: 4px solid white;
 	border-radius: 5px;
 	transition: all 0.4s;
+}
+
+.whiteBorder {
+	border: 4px solid white;
 }
 
 .author img:hover {
@@ -257,7 +267,8 @@ nav {
 
 .smallArticles {
 	height: 2000px;
-	background-color: #e0e0e0;
+/*	background-color: #f9f9f9;*/
+
 }
 
 .container1 {
@@ -266,15 +277,20 @@ nav {
 }
 
 .article {
-	background-color: #e0e0e0;
+	background-color: #f9f9f9;
 	height: 650px;
 	transition: all 0.4s;
+/*		cursor: pointer;*/
+}
+
+.pointer {
+	cursor: pointer;
 }
 
 .article:hover {
 	background-color: white; 
 	transform: scale(1.05);
-	color: #d33a2c;
+/*	color: #d33a2c;*/
 }
 
 
@@ -301,8 +317,9 @@ nav {
 	cursor: pointer;
 	font-size: 1.5em;
 	padding: 10px 20px;
-	color: #375a6f;
-	border-radius: 12px
+	color: #3775b6;
+	border-radius: 12px;
+	background-color: white;
 }
 
 .zoneBig a {
@@ -388,6 +405,18 @@ nav {
 	color: white;
 }
 
+@media only screen and (max-width: 1070px) {
+    .conference{
+    	margin-top: 700px
+    }
+}
+
+@media only screen and (max-width: 610px) {
+    .conference{
+    	margin-top: 1000px
+    }
+}
+
 .conference div ul {
 	list-style: none;
 	display: flex;
@@ -412,7 +441,7 @@ nav {
 .weekPers {
 	display: grid;
 	grid-template-columns: 30% 60%;
-	height: 500px;
+	height: 350px;
 	width: 85%;
 	margin: 50px auto
 }
@@ -443,4 +472,110 @@ nav {
 }
 
 
+.redBorder {
+	border: 4px solid #d33a2c;
+}
+
+.container0 p {
+	font-size: 1.25em;
+	line-height: 1.5em;
+}
+
+.container0 p span{
+	font-size: 0.8em;
+	color: grey;
+}
+
+.blue {
+	color: #2da2c5
+}
+
+.hoverRed {
+	transition:all 0.2s
+
+}
+
+.hoverRed:hover {
+	color: #d33a2c;
+	cursor: pointer;
+}
+
 /*---------------------------Tweets End------------------------------*/
+
+/*---------------------------Book Start------------------------------*/
+
+.bookSection {
+	width: 100%;
+	height:500px;
+	margin-top: 100px;
+}
+
+/*---------------------------Book End------------------------------*/
+/*---------------------------Guides Start------------------------------*/
+.list {
+	font-size: 1.5em;
+	list-style: none;
+}
+
+.list li {
+	margin-top: 15px; 
+	text-decoration: underline;
+}
+
+input {
+	padding: 15px 30px;
+	vertical-align: top;
+	border-radius: 10px;
+}
+
+
+.list li::before {
+  content: "\2022";
+  color: #d33a2c;
+  font-weight: bold;
+  display: inline-block;
+  width: 1em;
+  margin-left: -1em;
+}
+
+.SmallMarginTop {
+	margin-top: 50px;
+}
+
+
+
+
+/*---------------------------Guides End------------------------------*/
+
+/*---------------------------Footer Start------------------------------*/
+footer {
+	height: 650px;
+
+}
+
+footer ul li{
+	margin: 10px 20px;
+}
+
+
+.flex-wrap {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.em-m {
+	font-size: 1.5em
+}
+
+.em-s {
+	font-size: 0.8em;
+}
+
+.centered {
+	justify-content: center;
+	text-align: center;
+}
+
+
+
+/*---------------------------Footer End------------------------------*/
