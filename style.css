@@ -14,9 +14,7 @@ body {
 	background-color: #d33a2c;
 }
 
-.
 
-/*---------------------------Navigation Bar Start------------------------------*/
 
 nav {
 	width: 100%;
@@ -29,7 +27,6 @@ nav {
 	align-items: center;
 	margin: 0;
 	padding: 20px;
-	font-size: 2em;
 	color: white;
 
 }
@@ -47,6 +44,7 @@ nav {
 	transform-origin: bottom left;
 	transition: all 0.4s;
 }
+
 
 .mainNav li {
 	margin: 0 10px;
@@ -95,10 +93,7 @@ nav {
     }
 }
 
-/*---------------------------Navigation Bar End------------------------------*/
 
-
-/*---------------------------Under Header Start------------------------------*/
 .underHeader {
 	margin: 0 auto -120px auto;
 	display: flex;
@@ -121,7 +116,6 @@ nav {
 
 .circle {
 	color: white;
-	font-size: 1.5em;
 	vertical-align: middle;
 	transition: all 0.6s;
 	transition-timing-function: ease-in;
@@ -145,7 +139,7 @@ nav {
 .underHeader h2 span{
 	background-color: white;
 	padding: 5px;
-	color: #333;
+/*	color: #333;*/
 }
 
 @media only screen and (max-width: 900px) {
@@ -158,10 +152,6 @@ nav {
     }
 
 }
-
-/*----------------------------Under Header End------------------------------*/
-
-/*---------------------------Big Articles Start------------------------------*/
 
 .allArticles {
 	display: grid;
@@ -239,6 +229,22 @@ nav {
 	background-color: #b13125;
 }
 
+.white0 {
+	background-color: rgb(252,250,253);
+}
+
+.white1 {
+	background-color: rgb(246,244,247);
+}
+
+.white2{
+	background-color: rgb(242,240,243);
+}
+
+.black {
+	color: black;
+}
+
 .tags {
 	list-style: none;
 	display: flex;
@@ -261,13 +267,10 @@ nav {
 	bottom: 0;
 }
 
-/*---------------------------Big Articles End------------------------------*/
 
-/*---------------------------Small Articles Start------------------------------*/
 
 .smallArticles {
 	height: 2000px;
-/*	background-color: #f9f9f9;*/
 
 }
 
@@ -280,7 +283,6 @@ nav {
 	background-color: #f9f9f9;
 	height: 650px;
 	transition: all 0.4s;
-/*		cursor: pointer;*/
 }
 
 .pointer {
@@ -290,7 +292,6 @@ nav {
 .article:hover {
 	background-color: white; 
 	transform: scale(1.05);
-/*	color: #d33a2c;*/
 }
 
 
@@ -348,7 +349,6 @@ nav {
 }
 
 .zone h2 {
-	font-size: 2em;
 	margin-top: 10px;
 	text-decoration: underline;
 	  text-decoration-color: #77b0bd;
@@ -391,9 +391,6 @@ nav {
 	color: #d33a2c;
 }
 
-/*---------------------------Small Articles End------------------------------*/
-
-/*---------------------------Conference Start------------------------------*/
 
 .conference {
 	background-color: #2da2c5;
@@ -430,14 +427,7 @@ nav {
 	font-size: 1.3em;
 }
 
-.conference p {
-	font-size: 1.5em
-}
 
-
-/*---------------------------Conference End------------------------------*/
-
-/*---------------------------Tweets Start------------------------------*/
 .weekPers {
 	display: grid;
 	grid-template-columns: 30% 60%;
@@ -500,18 +490,47 @@ nav {
 	cursor: pointer;
 }
 
-/*---------------------------Tweets End------------------------------*/
 
-/*---------------------------Book Start------------------------------*/
 
 .bookSection {
 	width: 100%;
 	height:500px;
 	margin-top: 100px;
+	display: flex;
 }
 
-/*---------------------------Book End------------------------------*/
-/*---------------------------Guides Start------------------------------*/
+.bookSection button {
+		cursor: pointer;
+	font-size: 1.5em;
+	padding: 10px 20px;
+	color: #3775b6;
+	border-radius: 12px;
+	background-color: white;
+}
+
+.bookText {
+	margin: 50px;
+}
+
+.bookText h3 {
+	text-transform: uppercase;
+}
+
+.bookText h1 {
+	font-size: 2em
+}
+
+.bigBook {
+	height: 400px;
+	margin:-100px 50px 0 0;
+}
+
+.bigBook:hover {
+	transform: rotate(0);
+}
+
+
+
 .list {
 	font-size: 1.5em;
 	list-style: none;
@@ -544,10 +563,6 @@ input {
 
 
 
-
-/*---------------------------Guides End------------------------------*/
-
-/*---------------------------Footer Start------------------------------*/
 footer {
 	height: 650px;
 
@@ -567,15 +582,15 @@ footer ul li{
 	font-size: 1.5em
 }
 
-.em-s {
+.em-s-2 {
 	font-size: 0.8em;
+}
+
+.em-l {
+	font-size: 2em
 }
 
 .centered {
 	justify-content: center;
 	text-align: center;
 }
-
-
-
-/*---------------------------Footer End------------------------------*/

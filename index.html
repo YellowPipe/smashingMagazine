@@ -8,7 +8,7 @@
 <body>
 	
 	<nav class='red'>
-		<ul class='mainNav red'>
+		<ul class='mainNav em-l red'>
 			<li><img src="images/logo.svg" alt='logo' class='logo'></li>
 			<li>
 				<img class="navImg rotate" src="images/articles.svg" alt=''>
@@ -39,18 +39,18 @@
 		</ul>
 	</nav>
 
-	<div class='underHeader'>
-		<h2><span>Don’t Miss These Latest Articles</span></h2>
-		<div class='changeColorSection'>
-				<i class="circle fas fa-circle-notch"></i>
-			<button class='changeColorBtn topicsButton'>Seriously, red?</button>
+	<div id='h2' class='underHeader'>
+		<h2><span id='span'>Don’t Miss These Latest Articles</span></h2>
+		<div  class='changeColorSection'>
+				<i id='circle' class="circle em-m fas fa-circle-notch"></i>
+			<button id='colorsBtn' onclick="myFunction()" class='changeColorBtn topicsButton'>Seriously, red?</button>
 		</div>
 	</div> <!-- underHeader -->
-	<div class ='allArticles'> 
-		<div class='articleBig white red1'>
+	<div id='Articles' class ='allArticles white'> 
+		<div id='changing1' class='articleBig  red1'>
 			<div class='container0'>
 				<div class='author bigMarginTop'>
-					<img class='rotate whiteBorder' src="images/author1.jpg" alt=''>
+					<img id='img1' class='rotate whiteBorder' src="images/author1.jpg" alt=''>
 					<h2>Jack Lenox <i>wrote</i></h2>
 				</div>
 				<div class='title'>
@@ -63,10 +63,10 @@
 				<i class="fas fa-arrow-right"></i>
 		</div> <!-- container0 -->
 		</div> <!-- red1 -->
-		<div class='articleBig white red0'>
+		<div id='changing2' class='articleBig red0'>
 			<div class='container0'>
 				<div class='author bigMarginTop'>
-					<img class='rotate whiteBorder' src="images/author2.jpg" alt=''>
+					<img id='img2' class='rotate whiteBorder' src="images/author2.jpg" alt=''>
 					<h2>Amy Dickens <i>wrote</i></h2>
 				</div>
 				<div class='title'>
@@ -82,10 +82,10 @@
 				<i class="fas fa-arrow-right"></i>
 		</div> <!-- container0 -->
 	</div> <!-- red0 -->
-		<div class='articleBig white red2'>
+		<div id='changing3' class='articleBig red2'>
 			<div class='container0'>
 				<div class='author'>
-					<img class='rotate whiteBorder' src="images/author3.jpg" alt=''>
+					<img id='img3' class='rotate whiteBorder' src="images/author3.jpg" alt=''>
 					<h2>Rachel Andrew <i>wrote</i></h2>
 				</div>
 				<div class='title'>
@@ -101,10 +101,10 @@
 				<i class="fas fa-arrow-right"></i>
 		</div> <!-- container0 -->
 	</div>	<!-- red2 -->
-		<div class='articleBig white red1'> 
+		<div id='changing4'  class='articleBig red1'> 
 			<div class='container0'>
 				<div class='author'>
-					<img class='rotate whiteBorder' src="images/author4.jpg" alt=''>
+					<img id='img4' class='rotate whiteBorder' src="images/author4.jpg" alt=''>
 					<h2>Carolyn Porter <i>wrote</i></h2>
 				</div>
 				<div class='title'>
@@ -124,7 +124,7 @@
 			<div class='article hoverRed pointer'>
 				<div class="zone">
 					<p class='when'>7 days ago</p>
-					<h2>Powerful Image Analysis With Google Cloud Vision And Python</h2>
+					<h2 class="em-l">Powerful Image Analysis With Google Cloud Vision And Python</h2>
 					<p class='by'>by <span>Bartosz Biskupski</span>
 					<p class='articlePart'>The scope of possibilities to apply Google Cloud Vision is endless. With Python Library available, it can help you bring out deeper interest in Machine Learning technologies.</p>
 					<i class="fas fa-arrow-right"></i>
@@ -187,12 +187,12 @@
 				<li>april 16-17, 2019</li>
 			</ul>
 			<h1>SmashingConf San Francisco 2019</h1>
-			<p>Better estimates and pricing, applying psychology to UX, design workflow, refactoring, moving to a static site setup, CSS Grid techniques, performance and deployment patterns for HTTP/2.</p>
+			<p class="em-m">Better estimates and pricing, applying psychology to UX, design workflow, refactoring, moving to a static site setup, CSS Grid techniques, performance and deployment patterns for HTTP/2.</p>
 			<button>Explore all speakers and topics</button>
 		</div>
 	</div> <!-- conference -->
 	<div class ='weekPers'>
-		<img src="images/weekPers.png" class='weekPersImg rotate'>
+		<img src="images/weekPers.png" alt='' class='weekPersImg rotate'>
 		<div>
 			<h4>PERSON OF THE WEEK</h4>
 			<p>A front-end developer from Buenos Aires, <a href="">Evangelina Ferreira</a> loves the challenge of developing interfaces, layouts, and animations that are fast and responsive. Since 2012 Eva has been sharing her passion for the web teaching web technologies at the National Technological University of Argentina. She’s also the organizer of the non-profit event <a href="">CSSConf Argentina</a> and a Google Dev Expert. You can find her speaking at conferences around the world, <a href="">blogging occasionally</a>, and on Twitter as <a href="">@evaferreira92</a>. Thank you for sharing and caring, dear Eva!</p>
@@ -285,11 +285,16 @@
 	</div> <!-- red1 -->
 	</div> <!-- allArticles -->
 	<h3 class='moreArticles'>MORE LINKS ON TWITTER<i class="fas fa-arrow-right"></i></h3>
-	<div class='bookSection red'>
-		<h3>featured smashing book</h3>
-		<h1>Design Systems</h1>
-		<p>Meet Design Systems, a recent Smashing book in which Alla Kholmatova explores how to set up an effective design system to create great digital products. With common traps, gotchas and lessons learned.</p>
-		<button>Table of Contents ↬</button>
+	<div class='bookSection white red'>
+		<div class='bookText'>
+			<h3>featured smashing book</h3>
+			<div class="em-m">
+				<h1>Design Systems</h1>
+				<p>Meet Design Systems, a recent Smashing book in which Alla Kholmatova explores how to set up an effective design system to create great digital products. With common traps, gotchas and lessons learned.</p>
+			</div>
+			<button>Table of Contents ↬</button>
+		</div>
+		<img class="bigBook rotate" src="images/bookBig.png" alt='Book'>
 	</div> <!-- bookSection -->
 	<div class='smallArticles'>
 		<div class="container1">
@@ -429,7 +434,69 @@
 				<li><a class="white" href="">Advertise</a></li>
 			</ul>
 		</div>
-
 	</footer>
+
+	<script>
+		function myFunction() {
+  			const element1 = document.getElementById('changing1')
+  			const element2 = document.getElementById('changing2')
+  			const element3 = document.getElementById('changing3')
+  			const element4 = document.getElementById('changing4')
+  			const div =  document.getElementById('Articles')
+  			
+  			div.classList.toggle("white");
+  			
+  			if(element1.classList.contains('red1')) {
+  				document.getElementById('colorsBtn').style.color='grey'
+  				document.getElementById('colorsBtn').style.border='3px solid grey';
+  				document.getElementById('circle').style.color='grey'
+  				document.getElementById('span').style.background='#d33a2c'
+  				document.getElementById('h2').style.color='white';
+  				document.getElementById('img1').style.border='5px solid #d33a2c';
+  				document.getElementById('img2').style.border='5px solid #d33a2c';
+  				document.getElementById('img3').style.border='5px solid #d33a2c';
+  				document.getElementById('img4').style.border='5px solid #d33a2c';
+  				document.getElementById("colorsBtn").innerHTML = "Bring red back!";
+
+  				element1.classList.remove("red1");
+  				element1.classList.add("white1");
+
+  				element2.classList.remove("red0");
+  				element2.classList.add("white0");
+
+  				element3.classList.remove("red2");
+  				element3.classList.add("white2");
+
+  				element4.classList.remove("red1");
+  				element4.classList.add("white1");
+  			} else {
+  				document.getElementById('colorsBtn').style.color='white'
+  				document.getElementById('colorsBtn').style.border='3px solid white'
+  				document.getElementById('circle').style.color='white'
+  				document.getElementById('span').style.background='white'
+  				document.getElementById('h2').style.color='#333'
+  				document.getElementById('img1').style.border='5px solid white';
+  				document.getElementById('img2').style.border='5px solid white';
+  				document.getElementById('img3').style.border='5px solid white';
+  				document.getElementById('img4').style.border='5px solid white';
+				document.getElementById("colorsBtn").innerHTML = "Seriously, red?";
+
+  				element1.classList.add("red1");
+  				element1.classList.remove("white1");
+
+  				element2.classList.add("red0");
+  				element2.classList.remove("white0");
+
+  				element3.classList.add("red2");
+  				element3.classList.remove("white2");
+
+  				element4.classList.add("red1");
+  				element4.classList.remove("white1");
+  			}
+  			
+	}
+	</script>
+
 </body>
 </html>
+
